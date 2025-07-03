@@ -1,0 +1,48 @@
+.dashboard-container {
+  background-color: #121212;
+  color: white;
+  min-height: 100vh;
+}
+
+.dashboard-content {
+  padding: 20px;
+}
+
+.btn-agregar {
+  display: inline-block;
+  background-color: #00bfff;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  color: black;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th {
+  background-color: #00bfff;
+  color: black;
+}
+
+.estado-normal {
+  color: green;
+  font-weight: bold;
+}
+
+.estado-alerta {
+  color: red;
+  font-weight: bold;
+}

@@ -1,0 +1,78 @@
+.nuevo-informe-container {
+  background: #000;
+  color: white;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.formulario-informe {
+  background: #111;
+  padding: 30px;
+  max-width: 500px;
+  margin: 40px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario-informe input,
+.formulario-informe textarea {
+  padding: 10px;
+  background: #222;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.formulario-informe button {
+  background: #00ff80;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.modal-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.form-popup {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-popup input,
+.form-popup textarea {
+  background: #222;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-popup button {
+  background: #00ff80;
+  color: black;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}

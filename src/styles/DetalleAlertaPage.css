@@ -1,0 +1,65 @@
+.alerta-detalle-container {
+  background-color: #121212;
+  color: white;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.alerta-box {
+  display: flex;
+  background: #1c1c1c;
+  padding: 20px;
+  margin: 30px auto;
+  width: 85%;
+  border-radius: 12px;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
+}
+
+.alerta-box img {
+  width: 100px;
+  height: 100px;
+}
+
+.alerta-info {
+  flex: 1;
+}
+
+.alerta-info h2 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.alerta-info .sub {
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.botones button {
+  background: #00bfff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+
+.botones .clara {
+  background: orange;
+}
+
+.botones .editar {
+  background: #aaa;
+}
+
+.alerta-info label {
+  margin-top: 10px;
+  display: block;
+}

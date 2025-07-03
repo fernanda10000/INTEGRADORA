@@ -1,0 +1,50 @@
+.detalle-container {
+  background: #121212;
+  color: white;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.detalle-content {
+  padding: 20px 40px;
+}
+
+.fecha {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.etiqueta {
+  display: inline-block;
+  background: #00bfff;
+  color: black;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.etiqueta.normal {
+  background: #00ff8c;
+}
+
+.etiqueta.alerta {
+  background: #ff4f4f;
+}
+
+.datos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.grafico {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
