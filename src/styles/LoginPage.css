@@ -1,23 +1,35 @@
+:root {
+  --color-bg-dark:  hsl(209, 100%, 23%);         /* fondo muy oscuro */
+  --color-box-bg: #e0e0e0;          /* caja fondo oscuro */
+  --color-primary: #00A8E8;         /* azul celeste */
+  --color-input-bg: #e0e0e0;        /* input fondo oscuro */
+  --color-input-text:#003B73 ;      /* texto input negro */
+  --color-btn-bg: #00A8E8;          /* botón azul celeste */
+  --color-btn-text: #000000;        /* texto botón negro */
+  --color-title: #00A8E8;           /* título azul celeste */
+  --color-box-shadow: rgba(0, 168, 232, 0.3); /* sombra azul */
+}
+
 .login-container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #121212;
+  background-color: var(--color-bg-dark);
 }
 
 .login-box {
-  background: #1f1f1f;
+  background: var(--color-box-bg);
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 191, 255, 0.3);
+  box-shadow: 0 0 15px var(--color-box-shadow);
   display: flex;
   flex-direction: column;
   width: 300px;
 }
 
 .login-box h2 {
-  color: #00bfff;
+  color: var(--color-title);
   margin-bottom: 20px;
   text-align: center;
 }
@@ -27,16 +39,25 @@
   margin-bottom: 15px;
   border: none;
   border-radius: 5px;
-  background: #333;
-  color: white;
+  background: var(--color-input-bg);
+  color: var(--color-input-text);
+}
+
+.login-box input::placeholder {
+  color: #ccc;
 }
 
 .login-box button {
   padding: 10px;
-  background-color: #00bfff;
+  background-color: var(--color-btn-bg);
   border: none;
   border-radius: 5px;
-  color: black;
+  color: var(--color-btn-text);
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-box button:hover {
+  background-color: #44E0D0; /* turquesa claro para hover */
 }

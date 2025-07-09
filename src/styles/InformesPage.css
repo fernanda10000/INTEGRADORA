@@ -1,6 +1,21 @@
+:root {
+  --color-bg: #E0E0E0;             /* fondo gris claro */
+  --color-text: #003B73;           /* texto azul oscuro */
+  --color-primary: #00A8E8;        /* azul celeste */
+  --color-primary-dark: #003B73;   /* azul oscuro */
+  --color-accent: #44E0D0;         /* turquesa claro */
+  --color-btn-text: #000000;       /* texto negro para botones */
+  --color-white: #FFFFFF;          /* blanco */
+  --color-gray-light: #ccc;        /* gris claro para iconos */
+  --color-gray-dark: #333;         /* gris oscuro */
+  --color-black-dark: #111;        /* negro muy oscuro */
+  --color-btn-flotante-bg: #44E0D0; /* turquesa claro para botón flotante */
+  --color-btn-flotante-hover: #39c9bb; /* turquesa más oscuro */
+}
+
 .informes-container {
-  background: #000;
-  color: white;
+  background: var(--color-bg);
+  color: var(--color-text);
   min-height: 100vh;
   font-family: Arial, sans-serif;
 }
@@ -13,7 +28,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #00bfff;
+  background: var(--color-primary);
   padding: 10px;
   border-radius: 8px;
   margin-top: 10px;
@@ -27,14 +42,30 @@
   border-radius: 5px;
 }
 
+.barra-superior select {
+  padding: 8px;
+  border-radius: 5px;
+  background: var(--color-white);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--color-primary-dark);
+}
+
 .btn-agregar {
-  background: #007bff;
-  color: white;
+  background: var(--color-primary-dark);
+  color: var(--color-white);
   padding: 8px 12px;
   border: none;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agregar:hover {
+  background: var(--color-accent);
 }
 
 .lista-informes {
@@ -42,12 +73,12 @@
 }
 
 .item-informe {
-  background: #111;
-  color: white;
+  background: var(--color-black-dark);
+  color: var(--color-white);
   display: flex;
   align-items: center;
   gap: 15px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid var(--color-gray-dark);
   padding: 10px 0;
   text-decoration: none;
 }
@@ -60,21 +91,22 @@
 .item-informe .flecha {
   margin-left: auto;
   font-size: 20px;
-  color: #ccc;
+  color: var(--color-gray-light);
 }
+
 .btn-flotante {
   position: fixed;
   bottom: 30px;
   right: 30px;
   width: 55px;
   height: 55px;
-  background: #00ff80;
-  color: black;
+  background: var(--color-btn-flotante-bg);
+  color: var(--color-text);
   font-size: 28px;
   font-weight: bold;
   border: none;
   border-radius: 50%;
-  box-shadow: 0 0 12px rgba(0, 255, 128, 0.4);
+  box-shadow: 0 0 12px rgba(68, 224, 208, 0.4);
   cursor: pointer;
   z-index: 999;
   display: flex;
@@ -85,16 +117,7 @@
 }
 
 .btn-flotante:hover {
-  background-color: #00e673;
-}
-.barra-superior select {
-  padding: 8px;
-  border-radius: 5px;
-  background: #fff;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  color: #333;
+  background-color: var(--color-btn-flotante-hover);
 }
 
 .paginacion {
@@ -106,15 +129,20 @@
 .paginacion button {
   margin: 0 10px;
   padding: 8px 12px;
-  background: #00bfff;
+  background: var(--color-primary);
   border: none;
   border-radius: 5px;
-  color: black;
+  color: var(--color-btn-text);
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.paginacion button:hover {
+  background: var(--color-accent);
 }
 
 .paginacion span {
   font-weight: bold;
-  color: #ccc;
+  color: var(--color-gray-light);
 }

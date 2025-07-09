@@ -70,7 +70,7 @@ const UsuarioPage: React.FC = () => {
         <h2>ADMIN</h2>
 
         <div className="opcion" onClick={() => setMostrarPasswordForm(true)}>🔒 Contraseñas</div>
-        <div className="opcion">🛠️ Administrar tu Cuenta</div>
+       
 
         <p className="otros-label">Otros perfiles</p>
         {perfiles.map((p) => (

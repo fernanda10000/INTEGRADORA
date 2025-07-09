@@ -1,6 +1,6 @@
 .btn-agregar {
-  background: #00ff80;
-  color: black;
+  background: #00A8E8;
+  color: white;
   border: none;
   border-radius: 50%;
   font-size: 24px;
@@ -10,7 +10,7 @@
   position: absolute;
   top: 20px;
   right: 30px;
-  box-shadow: 0 0 8px rgba(0, 255, 128, 0.4);
+  box-shadow: 0 0 8px rgba(0, 168, 232, 0.4);
 }
 
 .modal-fondo {
@@ -23,17 +23,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .form-popup {
-  background: #1f1f1f;
-  color: black;
+  background: #003B73;
+  color: #FFFFFF;
   padding: 25px;
   border-radius: 10px;
   width: 300px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  box-shadow: 0 0 12px rgba(0, 168, 232, 0.3);
 }
 
 .form-popup input,
@@ -41,8 +43,8 @@
   padding: 8px;
   border-radius: 5px;
   border: none;
-  background: #333;
-  color: rgb(0, 0, 0);
+  background: #222;
+  color: #FFFFFF;
 }
 
 .btn-flotante {
@@ -51,13 +53,13 @@
   right: 30px;
   width: 50px;
   height: 50px;
-  background-color: #00ff80;
-  color: black;
+  background-color: #00A8E8;
+  color: white;
   font-size: 28px;
   font-weight: bold;
   border: none;
   border-radius: 50%;
-  box-shadow: 0 0 12px rgba(0, 255, 128, 0.5);
+  box-shadow: 0 0 12px rgba(0, 168, 232, 0.5);
   cursor: pointer;
   z-index: 999;
   display: flex;
@@ -67,5 +69,5 @@
 }
 
 .btn-flotante:hover {
-  background-color: #00e673;
+  background-color: #44E0D0;
 }

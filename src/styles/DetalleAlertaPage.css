@@ -1,19 +1,20 @@
 .alerta-detalle-container {
-  background-color: #121212;
-  color: white;
+  background-color: #E0E0E0;
+  color: #003B73;
   min-height: 100vh;
   font-family: Arial, sans-serif;
 }
 
 .alerta-box {
   display: flex;
-  background: #1c1c1c;
+  background: #003B73;
   padding: 20px;
   margin: 30px auto;
   width: 85%;
   border-radius: 12px;
   gap: 20px;
-  box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
+  box-shadow: 0 0 12px rgba(0, 168, 232, 0.3);
+  color: #FFFFFF;
 }
 
 .alerta-box img {
@@ -28,10 +29,11 @@
 .alerta-info h2 {
   margin-top: 0;
   font-size: 22px;
+  color: #FFFFFF;
 }
 
 .alerta-info .sub {
-  color: #ccc;
+  color: #CCCCCC;
   margin-bottom: 10px;
 }
 
@@ -42,24 +44,32 @@
 }
 
 .botones button {
-  background: #00bfff;
+  background: #00A8E8;
   border: none;
   padding: 8px 14px;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
-  color: black;
+  color: white;
+  transition: background 0.2s ease;
+}
+
+.botones button:hover {
+  background: #44E0D0;
 }
 
 .botones .clara {
   background: orange;
+  color: black;
 }
 
 .botones .editar {
-  background: #aaa;
+  background: #E0E0E0;
+  color: black;
 }
 
 .alerta-info label {
   margin-top: 10px;
   display: block;
+  color: #FFFFFF;
 }

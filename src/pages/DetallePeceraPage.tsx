@@ -17,10 +17,12 @@ ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Tooltip,
 
 const DetallePeceraPage: React.FC = () => {
   const { id } = useParams();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [pecera, setPecera] = useState<any>(null);
 
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem('peceras') || '[]');
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const encontrada = data.find((p: any) => p.sensor === id);
     setPecera(encontrada);
   }, [id]);
@@ -67,7 +69,7 @@ const DetallePeceraPage: React.FC = () => {
         <h3>Detalles de la medición</h3>
         <div className="datos-grid">
           <div><strong>Marca de tiempo:</strong><br />{pecera.fecha}</div>
-          <div><strong>Oxígeno disuelto:</strong><br />6.50 mg/L</div>
+          <div><strong>Conductividad:</strong><br />{pecera.conductividad} mg/L</div>
           <div><strong>Nivel de pH:</strong><br />{pecera.ph}</div>
           <div><strong>Temperatura del agua:</strong><br />{pecera.temperatura} °C</div>
           <div><strong>Identificación del sensor:</strong><br />{pecera.sensor}</div>

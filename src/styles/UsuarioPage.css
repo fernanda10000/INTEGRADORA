@@ -1,137 +1,204 @@
 .usuario-container {
-  background: #1c1c2b;
-  color: white;
+  background: #E0E0E0;
   min-height: 100vh;
-  font-family: Arial, sans-serif;
+  padding-top: 70px; /* deja espacio para navbar */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 60px;
+  justify-content: center;
+  font-family: Arial, sans-serif;
 }
 
 .perfil-card {
-  background: #2c2c3f;
+  background: #FFFFFF;
   padding: 30px;
-  border-radius: 12px;
-  width: 320px;
-  box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center;
+  border-radius: 16px;
+  width: 350px;
+  box-shadow: 0 0 12px rgba(0, 168, 232, 0.2);
+  text-align: center;
+  color: #003B73;
 }
 
 .foto-perfil {
-  width: 100px;
-  height: 100px;
-  background: #00bfff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  color: white;
-  flex-direction: column;
-  box-shadow: 0 0 8px #00bfff;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 
 .foto-perfil span {
-  font-size: 10px;
-  color: #eee;
-  margin-top: 4px;
+  display: block;
+  font-size: 14px;
+  color: #666;
+}
+
+.perfil-card h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .opcion {
-  width: 100%;
-  background: #444;
+  background: #00A8E8;
+  color: white;
   padding: 10px;
-  border-radius: 6px;
+  margin: 10px 0;
+  border-radius: 8px;
   cursor: pointer;
-  text-align: left;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.opcion:hover {
+  background: #44E0D0;
 }
 
 .otros-label {
-  align-self: flex-start;
-  margin-top: 10px;
-  color: #ccc;
-  font-size: 14px;
+  margin-top: 20px;
   font-weight: bold;
+  text-align: left;
+  font-size: 16px;
 }
 
 .perfil-secundario {
-  width: 100%;
-  background: #3a3a3a;
-  padding: 8px;
-  border-radius: 6px;
+  background: #E0E0E0;
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 14px;
   cursor: pointer;
 }
 
+.perfil-secundario:hover {
+  background: #D0D0D0;
+}
+
+.mini-foto {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .cerrar-btn {
-  margin-top: 20px;
-  background: #e74c3c;
+  background: #003B73;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 12px;
+  margin-top: 25px;
+  border-radius: 8px;
   width: 100%;
-  border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
+  transition: background 0.2s ease;
 }
+
+.cerrar-btn:hover {
+  background: #005599;
+}
+
+/* Modal */
 .modal-fondo {
   position: fixed;
   top: 0;
   left: 0;
+  background: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   z-index: 999;
 }
 
 .form-popup {
-  background: #2c2c3f;
-  color: white;
-  padding: 25px;
+  background: #003B73;
+  padding: 20px;
   border-radius: 10px;
+  color: white;
   width: 300px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  box-shadow: 0 0 10px rgba(0, 168, 232, 0.3);
 }
 
 .form-popup input {
-  padding: 8px;
+  padding: 10px;
   border-radius: 5px;
   border: none;
-  background: #444;
+  background: #222;
   color: white;
 }
 
 .form-popup button {
-  background: #00bfff;
-  border: none;
+  background: #00A8E8;
+  color: white;
   padding: 10px;
-  font-weight: bold;
   border-radius: 5px;
+  border: none;
+  font-weight: bold;
   cursor: pointer;
-}
-.perfil-secundario {
-  width: 100%;
-  background: #3a3a3a;
-  padding: 8px;
-  border-radius: 6px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  transition: background 0.2s ease;
 }
 
-.mini-foto {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  object-fit: cover;
+.form-popup button:hover {
+  background: #44E0D0;
 }
+.form-popup .cerrar-btn {
+  background: #003B73;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.form-popup .cerrar-btn:hover {
+  background: #005599;
+}
+.form-popup .cerrar-btn {
+  background: #C0392B;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form-popup .cerrar-btn:hover {
+  background: #c0392b;
+}
+.form-popup .cerrar-btn {
+  background: #C0392B;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form-popup .cerrar-btn:hover {
+  background: #c0392b;
+}
+.form-popup label {
+  color: #FFFFFF;
+  margin-top: 10px;
+  display: block;
+}
+.form-popup select {
+  background: #003B73;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-popup select option {
+  background: #003B73;
+  color: white;
+}
+

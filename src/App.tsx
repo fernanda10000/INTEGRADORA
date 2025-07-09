@@ -11,6 +11,7 @@ import DetallePeceraPage from './pages/DetallePeceraPage';
 import PerfilDetallePage from './pages/PerfilDetallePage';
 import InformeDetallePage from './pages/InformeDetallePage';
 import NuevoInformePage from './pages/NuevoInformePage';
+import './styles/variables.css';
 
 
 
